@@ -1,33 +1,77 @@
-## Prompt to create the initial agent config
+## Prompt To Create The Initial Agent Config
 
-Create an agent that act as a senior product manager and ultimately generate the following artifacts: Product Requirements Document (PRD), user stories, Product back log, work tickets and effort stimation. This agent will gather information in order to fulfill this job. User may provide documents with definitions and designs of the project.
+Create an agent that acts as a Senior Product Manager and generates the following artifacts:
 
-For each of these artifacts create skills.
+- Product Requirements Document (PRD)
+- User stories
+- Product backlog
+- Work tickets
+- Effort estimation
 
-create-PRD
-PRD artifact have a defined structure. It is fundamental that the artifact incorporates these two sections: Non-Goals/Out-of-Scope and KPI indicators and that it follows a modular structure and with secuential phases and clear dependencies in order to improve AI agents readability. When creating this skill ask for document structure that will be generated with it.
+This agent must gather information needed to produce these artifacts. Users may provide project definition and design documents as inputs.
 
-create-user-story
-Artifacts generated with this skill must follow a template following the best practices including: The 3 C's, INVEST prociple, etc. Acceptance criteria must follow the Given/When/Then from Behavior-Driven Development (BDD). Users stories may be embeded in the PRD file or in an independent file with links in the PRD.
+Create one skill for each artifact area.
 
-prioritize-backlog
-Artifact generated with this skill must follow a structure following MoSCoW prioritization. This artifact may be embeded in the PRD or in a independent file with links in the PRD.
+### create-prd
 
-create-work-ticket
-Artifacts generated with this skill must follow a structure including: title, description, Acceptance criteria, priority, estimation, asignee, tags, comments, links to other resources and a change log. This artifact may be embeded in the PRD or in a independent file with links in the PRD.
+The PRD artifact must follow a defined structure. It is fundamental that the artifact includes these two sections:
 
-estimate-ticket
-This skill will help to estimate work tickets creating an artifact and also updating work tickets. 
+- Non-Goals / Out-of-Scope
+- KPI indicators
 
-Not asume anything and ask me for approval of the templates that are going to be created for the skills. 
+The PRD must also use a modular structure with sequential phases and clear dependencies to improve readability for AI agents.
 
-### Agent questions
+When creating this skill, ask for the document structure that will be generated.
 
-Q: Do you approve all 6 templates above (agent + 5 skills), or would you like changes to any of them?
-A: Approve all — proceed to create files
-Q: Should user stories, backlog, and tickets be embedded in the PRD by default, or generated as separate files with links?
-A: Ask the user which is his preference at the begining, subsequent generations will follow user preference.
-Q: Where should the agent and skills be created?
-A: .github/ (workspace-level, shared with team)
+### create-user-story
+
+Artifacts generated with this skill must use a template aligned with best practices, including:
+
+- The 3 C's
+- INVEST principle
+
+Acceptance criteria must follow Given/When/Then from Behavior-Driven Development (BDD).
+
+User stories may be embedded in the PRD file or generated in an independent file linked from the PRD.
+
+### prioritize-backlog
+
+Artifacts generated with this skill must follow a MoSCoW prioritization structure.
+
+This artifact may be embedded in the PRD or generated in an independent file linked from the PRD.
+
+### create-work-ticket
+
+Artifacts generated with this skill must include:
+
+- Title
+- Description
+- Acceptance criteria
+- Priority
+- Estimation
+- Assignee
+- Tags
+- Comments
+- Links to other resources
+- Change log
+
+This artifact may be embedded in the PRD or generated in an independent file linked from the PRD.
+
+### estimate-ticket
+
+This skill helps estimate work tickets by creating an estimation artifact and updating existing tickets.
+
+Do not assume anything. Ask for approval of the templates that will be created for the skills.
+
+### Agent Questions
+
+Q: Do you approve all 6 templates above (agent + 5 skills), or would you like changes to any of them?  
+A: Approve all - proceed to create files.
+
+Q: Should user stories, backlog, and tickets be embedded in the PRD by default, or generated as separate files with links?  
+A: Ask the user for their preference at the beginning. Subsequent generations will follow that preference.
+
+Q: Where should the agent and skills be created?  
+A: .github/ (workspace-level, shared with team).
 
 
