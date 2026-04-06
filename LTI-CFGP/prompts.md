@@ -94,7 +94,7 @@ A: Use default structure - Standard sections: Overview, Problem, Goals, Non-Goal
 Q: Where should the PRD and related files be placed?  
 A: Inside LTI-CFGP folder, named PRD-LTI-CFGP.md.
 
-# Prompt for product road map, user story map and user stories
+# Prompt for product road map, user story map, user stories , back log prioritization, work tickets and estimation. 
 
 In this stage with PRD created, agent just ask for approval and suggest to move with the next phase. I approved the work and let the agent move with the
 following tasks. 
