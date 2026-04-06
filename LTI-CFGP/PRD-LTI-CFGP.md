@@ -236,7 +236,7 @@ Existing ATS tools (Greenhouse, Lever, Workday) are architected for large organi
 
 ## 13. Product Backlog
 
-> See: [product-backlog.md](./product-backlog.md) *(to be generated with the `prioritize-backlog` skill)*
+> See: [product-backlog.md](./product-backlog.md)
 
 ---
 
