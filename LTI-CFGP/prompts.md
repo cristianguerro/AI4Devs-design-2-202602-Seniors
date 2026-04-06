@@ -1,6 +1,6 @@
-# Prompt to Create the Initial Agent Config
+## Prompt to Create the Initial Agent Config
 
-Model used: Claude Opus 4.6 high
+Model used: Claude Opus 4.6 high.
 
 Create an agent that acts as a Senior Product Manager and generates the following artifacts:
 
@@ -67,34 +67,37 @@ Do not assume anything. Ask for approval of the templates that will be created f
 
 ### Agent Questions
 
-Q: Do you approve all 6 templates above (agent + 5 skills), or would you like changes to any of them?  
-A: Approve all - proceed to create files.
+1. Q: Do you approve all 6 templates above (agent + 5 skills), or would you like changes to any of them?  
+   A: Approve all - proceed to create files.
+2. Q: Should user stories, backlog, and tickets be embedded in the PRD by default, or generated as separate files with links?  
+   A: Ask the user for their preference at the beginning. Subsequent generations will follow that preference.
+3. Q: Where should the agent and skills be created?  
+   A: .github/ (workspace-level, shared with team).
 
-Q: Should user stories, backlog, and tickets be embedded in the PRD by default, or generated as separate files with links?  
-A: Ask the user for their preference at the beginning. Subsequent generations will follow that preference.
+## Prompt to Create PRD
 
-Q: Where should the agent and skills be created?  
-A: .github/ (workspace-level, shared with team).
-
-# Prompt to Create PRD
-
-Model used: Claude Opus 4.6 high
+Model used: Claude Opus 4.6 high.
 
 In this GitHub repo https://github.com/cristianguerro/AI4Devs-design-1-202602-Seniors/tree/feature/lti-cfgp there is the LTI ATS - System Design Document.
 Create a PRD based on this document.
 
 ### Questions for PRD Creation
 
-Q: Should subsequent artifacts (roadmap, story map, user stories, backlog, tickets) be embedded in the PRD or in separate linked files?  
-A: Separate files - Each artifact in its own file, linked from the PRD.
+1. Q: Should subsequent artifacts (roadmap, story map, user stories, backlog, tickets) be embedded in the PRD or in separate linked files?  
+   A: Separate files - each artifact in its own file, linked from the PRD.
+2. Q: Should I use the default PRD structure, or do you want to customize it before I generate?  
+   A: Use default structure - standard sections: Overview, Problem, Goals, Non-Goals, Roadmap, Epics, Personas, Requirements, NFRs, KPIs, etc.
+3. Q: Where should the PRD and related files be placed?  
+   A: Inside LTI-CFGP folder, named PRD-LTI-CFGP.md.
 
-Q: Should I use the default PRD structure, or do you want to customize it before I generate?  
-A: Use default structure - Standard sections: Overview, Problem, Goals, Non-Goals, Roadmap, Epics, Personas, Requirements, NFRs, KPIs, etc.
+## Prompt for Product Roadmap, Story Map, Backlog, Tickets, and Estimation
 
-Q: Where should the PRD and related files be placed?  
-A: Inside LTI-CFGP folder, named PRD-LTI-CFGP.md.
+At this stage, with the PRD created, the agent asked for approval and suggested moving to the next phase.
+I approved the work and let the agent proceed with the following tasks.
 
-# Prompt for product road map, user story map, user stories , back log prioritization, work tickets and estimation. 
+## Afterthoughts
 
-In this stage with PRD created, agent just ask for approval and suggest to move with the next phase. I approved the work and let the agent move with the
-following tasks. 
+This agent worked as expected and, as a first version, I think it performed really well.
+The next update I am considering is adding a skill named something like `create-sprint`, where it takes a reasonable number of user stories and creates an artifact to be used in the next sprint.
+That is something I did not take into account when I started the exercise, as I have never been in the position of creating user stories.
+This kind of exercise put me in the position of creating a personal project management tool.
