@@ -1,4 +1,6 @@
-## Prompt To Create The Initial Agent Config
+# Prompt to Create the Initial Agent Config
+
+Model used: Claude Opus 4.6 high
 
 Create an agent that acts as a Senior Product Manager and generates the following artifacts:
 
@@ -74,4 +76,20 @@ A: Ask the user for their preference at the beginning. Subsequent generations wi
 Q: Where should the agent and skills be created?  
 A: .github/ (workspace-level, shared with team).
 
+# Prompt to Create PRD
 
+Model used: Claude Opus 4.6 high
+
+In this GitHub repo https://github.com/cristianguerro/AI4Devs-design-1-202602-Seniors/tree/feature/lti-cfgp there is the LTI ATS - System Design Document.
+Create a PRD based on this document.
+
+### Questions for PRD Creation
+
+Q: Should subsequent artifacts (roadmap, story map, user stories, backlog, tickets) be embedded in the PRD or in separate linked files?  
+A: Separate files - Each artifact in its own file, linked from the PRD.
+
+Q: Should I use the default PRD structure, or do you want to customize it before I generate?  
+A: Use default structure - Standard sections: Overview, Problem, Goals, Non-Goals, Roadmap, Epics, Personas, Requirements, NFRs, KPIs, etc.
+
+Q: Where should the PRD and related files be placed?  
+A: Inside LTI-CFGP folder, named PRD-LTI-CFGP.md.
