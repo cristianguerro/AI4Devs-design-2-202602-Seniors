@@ -16,9 +16,10 @@ argument-hint: "Provide user stories or PRD reference to prioritize"
 
 ### Step 1: Gather Context
 1. Read the PRD and user stories (embedded or from separate file)
-2. Understand the project goals and KPIs (PRD Sections 3 and 8)
-3. Review the Non-Goals/Out-of-Scope (PRD Section 4) — items listed as "Won't Have" may already be defined there
-4. Check the user's artifact placement preference (embedded in PRD or separate file)
+2. Confirm the roadmap, epics, and user story map are already approved
+3. Understand the project goals and KPIs in the PRD
+4. Review the Non-Goals/Out-of-Scope section in the PRD — items listed as "Won't Have" may already be defined there
+5. Check the user's artifact placement preference (embedded in PRD or separate file)
 
 ### Step 2: Apply MoSCoW Prioritization
 Classify each user story using these criteria:
@@ -95,6 +96,7 @@ Based on the user's preference:
 - Confirm prioritization before proceeding
 
 ## Key Rules
+- Do NOT prioritize backlog items before the roadmap, epics, and user story map are approved
 - Every user story MUST be classified into exactly one MoSCoW category
 - Won't Have items MUST include a rationale and a revisit timeline
 - The backlog MUST include a summary table with counts and total story points

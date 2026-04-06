@@ -16,8 +16,9 @@ argument-hint: "Provide user stories or backlog items to break into work tickets
 
 ### Step 1: Gather Context
 1. Read the PRD, user stories, and backlog if available
-2. Identify which user stories or backlog items need to be broken into tickets
-3. Check the user's artifact placement preference (embedded in PRD or separate file)
+2. Confirm the roadmap, epics, user story map, and user stories are already approved
+3. Identify which user stories or backlog items need to be broken into tickets
+4. Check the user's artifact placement preference (embedded in PRD or separate file)
 
 ### Step 2: Generate Work Tickets
 For each ticket, use the following template:
@@ -103,6 +104,7 @@ Based on the user's preference:
 - Iterate until approved
 
 ## Key Rules
+- Do NOT create work tickets before the roadmap, epics, user story map, and user stories are approved
 - Every ticket MUST link back to a user story (US-ID) and PRD requirement (FR-X.X)
 - Every ticket MUST have at least one acceptance criterion
 - Titles MUST be action-oriented and start with a verb

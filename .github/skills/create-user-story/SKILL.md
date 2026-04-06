@@ -16,12 +16,16 @@ argument-hint: "Provide requirements, features, or PRD reference to generate use
 
 ### Step 1: Gather Context
 1. Read the PRD or requirements document if available
-2. Identify the personas/roles from the PRD (Section 5)
-3. Identify functional requirements to translate into stories
-4. Check the user's artifact placement preference (embedded in PRD or separate file)
+2. Verify that epics are already defined and approved in the PRD or a related artifact
+3. Verify that a user story map already exists and has been approved
+4. Identify the personas/roles from the PRD
+5. Identify functional requirements to translate into stories
+6. Check the user's artifact placement preference (embedded in PRD or separate file)
+
+Do NOT generate user stories until epics and the user story map have been defined and approved.
 
 ### Step 2: Generate User Stories
-For each requirement or feature, generate a user story using the template below. Apply the **3 C's** (Card, Conversation, Confirmation) and validate against the **INVEST** principle.
+For each approved epic and mapped requirement, generate a user story using the template below. Apply the **3 C's** (Card, Conversation, Confirmation) and validate against the **INVEST** principle.
 
 ```markdown
 ## User Story: {US-ID}
@@ -64,6 +68,7 @@ For each requirement or feature, generate a user story using the template below.
 - **Story Points**: {Estimate — leave blank if not yet estimated}
 - **Sprint**: {Sprint number — leave blank if not yet assigned}
 - **Epic/Feature**: {Parent epic or feature name}
+- **Epic ID**: {EPIC-XX reference}
 - **PRD Requirement**: {FR-X.X reference}
 - **Labels/Tags**: {Relevant tags}
 ```
@@ -77,14 +82,14 @@ For every story, verify:
    - **Confirmation**: At least 2 BDD acceptance criteria scenarios exist
 2. **INVEST Compliance**: All 6 criteria are checked and justified
 3. **BDD Scenarios**: Each scenario follows strict Given/When/Then format
-4. **Traceability**: Story links back to a PRD functional requirement (FR-X.X)
+4. **Traceability**: Story links back to an approved epic and a PRD functional requirement (FR-X.X)
 
 ### Step 4: Place the Artifact
 Based on the user's preference:
-- **Embedded**: Add stories under Section 9 of the PRD
-- **Separate file**: Create `user-stories.md` in the same directory and add a link in Section 9 of the PRD:
+- **Embedded**: Add the stories under the PRD user stories section
+- **Separate file**: Create `user-stories.md` in the same directory and add a link in the PRD:
   ```markdown
-  ## 9. User Stories
+  ## 12. User Stories
   > See: [user-stories.md](./user-stories.md)
   ```
 
@@ -94,10 +99,13 @@ Based on the user's preference:
 - Confirm each story is complete before moving on
 
 ## Key Rules
+- Never generate user stories before epics are defined and approved
+- Never generate user stories before the `create-user-story-map` skill has been used and approved
 - Every acceptance criterion MUST use Given/When/Then format — no exceptions
 - Every story MUST have at least 2 BDD scenarios
 - Every story MUST be validated against all 6 INVEST criteria
 - User story IDs follow the pattern `US-{number}` (e.g., US-001, US-002)
+- Epic IDs follow the pattern `EPIC-{number}` (e.g., EPIC-01, EPIC-02)
 - Always link stories to PRD requirement IDs for traceability
 - Do NOT invent user needs — derive stories only from documented or confirmed requirements
 - If a story is too large (fails the "Small" INVEST check), recommend splitting it
