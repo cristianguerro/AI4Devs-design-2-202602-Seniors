@@ -4,7 +4,7 @@
 **Product Owner**: Cristhian Guerrero  
 **Prioritization Method**: MoSCoW  
 **Source PRD**: [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md)  
-**User Stories**: [user-stories.md](./user-stories.md)  
+**User Stories**: [UserStories-CFGP.md](./UserStories-CFGP.md)  
 **Work Tickets**: [work-tickets.md](./work-tickets.md)
 
 ---

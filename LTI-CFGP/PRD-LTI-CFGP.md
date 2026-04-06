@@ -230,7 +230,7 @@ Existing ATS tools (Greenhouse, Lever, Workday) are architected for large organi
 
 ## 12. User Stories
 
-> See: [user-stories.md](./user-stories.md)
+> See: [UserStories-CFGP.md](./UserStories-CFGP.md)
 
 ---
 

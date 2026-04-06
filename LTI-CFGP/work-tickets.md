@@ -2,7 +2,7 @@
 
 **Product**: LTI ATS (Applicant Tracking System)  
 **Source PRD**: [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md)  
-**User Stories**: [user-stories.md](./user-stories.md)  
+**User Stories**: [UserStories-CFGP.md](./UserStories-CFGP.md)  
 **Backlog**: [product-backlog.md](./product-backlog.md)
 
 ---
@@ -105,7 +105,7 @@ Must Have
 ### Links & Resources
 | Type | Description | URL/Reference |
 |------|-------------|---------------|
-| User Story | US-001 | [user-stories.md](./user-stories.md#user-story-us-001) |
+| User Story | US-001 | [UserStories-CFGP.md](./UserStories-CFGP.md#user-story-us-001) |
 | PRD Requirement | FR-1.1 | [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md) |
 | Depends On | — | None |
 | Blocks | TK-002, TK-003, TK-004 | — |
@@ -167,7 +167,7 @@ Must Have
 ### Links & Resources
 | Type | Description | URL/Reference |
 |------|-------------|---------------|
-| User Story | US-001 | [user-stories.md](./user-stories.md#user-story-us-001) |
+| User Story | US-001 | [UserStories-CFGP.md](./UserStories-CFGP.md#user-story-us-001) |
 | PRD Requirement | FR-1.1, FR-1.4 | [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md) |
 | Depends On | TK-001 | Database schemas must exist |
 | Blocks | TK-005 | Invitation flow needs auth |
@@ -227,7 +227,7 @@ Must Have
 ### Links & Resources
 | Type | Description | URL/Reference |
 |------|-------------|---------------|
-| User Story | US-001 | [user-stories.md](./user-stories.md#user-story-us-001) |
+| User Story | US-001 | [UserStories-CFGP.md](./UserStories-CFGP.md#user-story-us-001) |
 | PRD Requirement | FR-1.1, FR-1.4 | [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md) |
 | Depends On | TK-002 | Signup API must be ready |
 | Blocks | TK-006 | Team settings page depends on auth flow |
@@ -290,7 +290,7 @@ Must Have
 ### Links & Resources
 | Type | Description | URL/Reference |
 |------|-------------|---------------|
-| User Story | US-001 | [user-stories.md](./user-stories.md#user-story-us-001) |
+| User Story | US-001 | [UserStories-CFGP.md](./UserStories-CFGP.md#user-story-us-001) |
 | PRD Requirement | FR-1.4 | [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md) |
 | Depends On | TK-001, TK-002 | Needs DB + signup first |
 | Blocks | TK-005, TK-009 | All authenticated features |
@@ -354,7 +354,7 @@ Must Have
 ### Links & Resources
 | Type | Description | URL/Reference |
 |------|-------------|---------------|
-| User Story | US-002 | [user-stories.md](./user-stories.md#user-story-us-002) |
+| User Story | US-002 | [UserStories-CFGP.md](./UserStories-CFGP.md#user-story-us-002) |
 | PRD Requirement | FR-1.2, FR-1.3 | [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md) |
 | Depends On | TK-001, TK-004 | DB schema + auth middleware |
 | Blocks | TK-006, TK-007 | Email + frontend depend on this |
@@ -413,7 +413,7 @@ Must Have
 ### Links & Resources
 | Type | Description | URL/Reference |
 |------|-------------|---------------|
-| User Story | US-002 | [user-stories.md](./user-stories.md#user-story-us-002) |
+| User Story | US-002 | [UserStories-CFGP.md](./UserStories-CFGP.md#user-story-us-002) |
 | PRD Requirement | FR-1.2 | [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md) |
 | Depends On | TK-005 | Invitation API must create the record |
 | Blocks | — | — |
@@ -472,7 +472,7 @@ Must Have
 ### Links & Resources
 | Type | Description | URL/Reference |
 |------|-------------|---------------|
-| User Story | US-002 | [user-stories.md](./user-stories.md#user-story-us-002) |
+| User Story | US-002 | [UserStories-CFGP.md](./UserStories-CFGP.md#user-story-us-002) |
 | PRD Requirement | FR-1.2, FR-1.3 | [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md) |
 | Depends On | TK-005 | Invitation records must exist |
 | Blocks | TK-008 | Frontend invite signup page |
@@ -530,7 +530,7 @@ Must Have
 ### Links & Resources
 | Type | Description | URL/Reference |
 |------|-------------|---------------|
-| User Story | US-002 | [user-stories.md](./user-stories.md#user-story-us-002) |
+| User Story | US-002 | [UserStories-CFGP.md](./UserStories-CFGP.md#user-story-us-002) |
 | PRD Requirement | FR-1.2, FR-1.3 | [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md) |
 | Depends On | TK-005, TK-007 | API endpoints for invite + accept |
 | Blocks | — | — |
@@ -596,7 +596,7 @@ Must Have
 ### Links & Resources
 | Type | Description | URL/Reference |
 |------|-------------|---------------|
-| User Story | US-003 | [user-stories.md](./user-stories.md#user-story-us-003) |
+| User Story | US-003 | [UserStories-CFGP.md](./UserStories-CFGP.md#user-story-us-003) |
 | PRD Requirement | FR-1.1 | [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md) |
 | Depends On | TK-001, TK-004 | DB schema + auth middleware |
 | Blocks | TK-010, TK-011 | Frontend + career page depend on this |
@@ -655,7 +655,7 @@ Must Have
 ### Links & Resources
 | Type | Description | URL/Reference |
 |------|-------------|---------------|
-| User Story | US-003 | [user-stories.md](./user-stories.md#user-story-us-003) |
+| User Story | US-003 | [UserStories-CFGP.md](./UserStories-CFGP.md#user-story-us-003) |
 | PRD Requirement | FR-1.1 | [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md) |
 | Depends On | TK-009 | Profile update API |
 | Blocks | — | — |
@@ -712,7 +712,7 @@ Must Have
 ### Links & Resources
 | Type | Description | URL/Reference |
 |------|-------------|---------------|
-| User Story | US-003 | [user-stories.md](./user-stories.md#user-story-us-003) |
+| User Story | US-003 | [UserStories-CFGP.md](./UserStories-CFGP.md#user-story-us-003) |
 | PRD Requirement | FR-1.1, FR-1.7 | [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md) |
 | Depends On | TK-009 | Profile data must be saveable |
 | Blocks | — | Needed by US-007 (preview) and US-008 (publish) |
