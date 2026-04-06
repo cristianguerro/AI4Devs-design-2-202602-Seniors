@@ -224,7 +224,7 @@ Existing ATS tools (Greenhouse, Lever, Workday) are architected for large organi
 
 ## 11. User Story Map
 
-> See: [user-story-map.md](./user-story-map.md) *(to be generated with the `create-user-story-map` skill)*
+> See: [user-story-map.md](./user-story-map.md)
 
 ---
 
