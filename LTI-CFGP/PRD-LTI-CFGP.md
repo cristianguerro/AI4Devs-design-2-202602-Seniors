@@ -240,6 +240,12 @@ Existing ATS tools (Greenhouse, Lever, Workday) are architected for large organi
 
 ---
 
+## 13.1 Work Tickets
+
+> See: [work-tickets.md](./work-tickets.md)
+
+---
+
 ## 14. Technical Considerations
 
 - **Architecture**: Modular monolith with clearly defined internal service boundaries (Job Service, Pipeline Service, Notification Service, Scheduling Service, Resume Parser). Designed for future extraction into microservices as load and team size grow.

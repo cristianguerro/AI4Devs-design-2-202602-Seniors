@@ -4,7 +4,8 @@
 **Product Owner**: Cristhian Guerrero  
 **Prioritization Method**: MoSCoW  
 **Source PRD**: [PRD-LTI-CFGP.md](./PRD-LTI-CFGP.md)  
-**User Stories**: [user-stories.md](./user-stories.md)
+**User Stories**: [user-stories.md](./user-stories.md)  
+**Work Tickets**: [work-tickets.md](./work-tickets.md)
 
 ---
 
@@ -14,9 +15,9 @@ These stories are required for the MVP to function as a complete recruiting work
 
 | ID | User Story | Epic | Description | Effort | Sprint | Dependencies | Status |
 |----|-----------|------|-------------|--------|--------|--------------|--------|
-| US-001 | Sign up & create company account | EPIC-01 | User creates account with company name, slug auto-generated, admin role assigned | — | — | None | Not Started |
-| US-002 | Invite team members with roles | EPIC-01 | Admin invites recruiters/hiring managers via email with role assignment | — | — | US-001 | Not Started |
-| US-003 | Configure company profile & branding | EPIC-01 | Admin sets company name, logo, website for branded career page | — | — | US-001 | Not Started |
+| US-001 | Sign up & create company account | EPIC-01 | User creates account with company name, slug auto-generated, admin role assigned | 16 SP | — | None | Not Started |
+| US-002 | Invite team members with roles | EPIC-01 | Admin invites recruiters/hiring managers via email with role assignment | 18 SP | — | US-001 | Not Started |
+| US-003 | Configure company profile & branding | EPIC-01 | Admin sets company name, logo, website for branded career page | 11 SP | — | US-001 | Not Started |
 | US-004 | Connect calendar (Google/Outlook) | EPIC-01 | Users connect calendar via OAuth2 for interview scheduling | — | — | US-001 | Not Started |
 | US-006 | Create job posting with structured fields | EPIC-02 | Admin creates job listing with title, description, salary, location, remote flag | — | — | US-001 | Not Started |
 | US-008 | Publish & syndicate to job boards | EPIC-02 | One-click publish to career page + Indeed + LinkedIn with async syndication | — | — | US-006 | Not Started |
